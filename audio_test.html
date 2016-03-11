@@ -1,0 +1,29 @@
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+
+<audio src="http://tonycuffe.com/mp3/tailtoddle_lo.mp3" id="player"></audio>  
+<button id="play">Play</button>
+<button id="pause">Pause</button>
+<img id="mountain" src="http://www.w3schools.com/html/pic_mountain.jpg">
+<progress id="seekbar" value="0" max="1" style="width:400px;"></progress>
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+  		$('#mountain').loadgo();
+	});
+	$('#play').on('click', function() {
+    	document.getElementById('player').play();
+	});
+
+	$('#pause').on('click', function() {
+	    document.getElementById('player').pause();
+	});
+
+	$('#player').on('timeupdate', function() {
+	    $('#seekbar').attr("value", this.currentTime / this.duration);
+	});
+</script>

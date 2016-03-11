@@ -1,0 +1,95 @@
+ * {
+    padding: 0;
+    margin: 0;
+  }
+  .fit { /* set relative picture size */
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+  	display: block;
+  	margin: 0 auto;
+	background-size: 100% auto;
+    position: absolute;
+  }
+  .center {
+    display: block;
+    margin: auto;
+  }
+
+
+
+/*#object1 { transition: 1s; }*/
+
+/*#horn_prompt {
+	visibility: hidden;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+
+}*/
+#object1_horn {
+	top:200px;
+	bottom:0px;
+	left:40px;
+	right:400px;
+}
+
+g:hover #horn_prompt {
+	visibility: visible;
+}
+g:hover #horn,
+g:hover #crate {
+	fill: #56c6d8;
+	opacity: 100%; 
+}
+ /*{ 
+	fill: #56c6d8;
+	opacity: 100%; 
+}*/
+
+
+
+
+
+
+body {
+	background-size: 82%;
+	background-repeat: no-repeat;
+	background-position: 2% 0%;
+}
+
+svg:hover #phone { fill: darkslateblue; }
+
+
+/*#horn_prompt #object1_horn {
+	font-family: "Arial";
+	color: white;
+	position: absolute;
+	background: rgba(100,100,100,0);
+	top:200px;
+	bottom:0px;
+	left:40px;
+	right:0px;
+}
+*/
+#horn_pause {
+	visibility: hidden;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top:130px;
+	bottom:0px;
+	left:580px;
+	right:0px;
+}
+
+#object2_crate {
+	position: absolute;
+	top:7px;
+	bottom:0px;
+	left:7px;
+	right:0px;
+}
